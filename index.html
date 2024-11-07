@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanath Kumar Chigurumamidi - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/803df21963.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Particle JS Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header Section -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="Images/logo.png" class="logo" alt="Sanath Logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Experience</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      
+      <!-- Flex container for text and image -->
+      <div class="header-content">
+        <!-- Left side: Text content -->
+        <div class="header-text">
+          <div class="header-content">
+            <div class="header-image">
+              <img src="Images/img231.png" alt="Sanath Image">
+            </div>
+            <div class="header-text">
+              <h1>I'm <span>Sanath Chigurumamidi</span><br> From Tallahassee, Florida</h1>
+              <div class="title-container">
+                <span class="title title1">Software Development Engineer</span>
+                <span class="title title2">Student at FSU</span>
+              </div>
+              <p>Welcome to my portfolio! This space offers a glimpse into<br> my journey, showcasing my skills and projects. Here, you can <br>explore my work in full-stack development, web applications,<br> and other creative endeavors that highlight my problem-solving <br>approach and technical expertise. I am passionate about developing <br>innovative solutions that make a lasting impact. Let’s build <br>something remarkable together!</p>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="Images/Sanath_ProfilePic.jpg" alt="Sanath Profile Picture">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am passionate about Java Development, software engineering, and leveraging cutting-edge technologies to create impactful solutions. Currently pursuing my Master's in Computer Science at Florida State University, I'm always exploring innovative ways to optimize processes and solve complex problems.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Java</span><br>Spring Framework</li>
+              <li><span>Python</span><br>Machine Learning, NLP</li>
+              <li><span>JavaScript</span><br>React, Node.js</li>
+              <li><span>AWS</span><br>Cloud Architecture</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2023-2025</span><br>Master of Science (M.S), Florida State University</li>
+              <li><span>2018-2022</span><br>Bachelor of Engineering, Osmania University</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services / Experience Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">Experience</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-magnifying-glass-chart"></i>
+          <h2>Data Architect Intern, Domistation</h2>
+          <p>• Implemented advanced data cleaning techniques on large datasets, resulting in a 20% reduction in processing time for generating reports.</p>
+          <p>• Collaborated with cross-functional teams to develop interactive dashboards for key stakeholders, improving data accessibility and user engagement by 30%.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-chalkboard-teacher"></i>
+          <h2>Teaching Assistant - FSU Young Scholar Program</h2>
+          <p>• Assisted in developing and delivering course materials, lectures, and assignments on advanced Python topics.</p>
+          <p>• Conducted weekly lab sessions, providing hands-on coding exercises and one-on-one tutoring.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Software Engineer - FIS Global</h2>
+          <p>• Collaborated on a modern banking solution project, contributing to Java application development, design, and debugging.</p>
+          <p>• Improved database efficiency by 30% through migration to PostgreSQL, and reduced deployment time by 40% using CI/CD pipelines.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="Images/travel.png" alt="Travel Management Project">
+          <div class="layer">
+            <h3>Travel Management System</h3>
+            <p>A comprehensive web application for travel management and cost estimation.</p>
+            <a href="https://github.com/sanath2000"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="Images/restaurant.png" alt="Restaurant Review Sentiment Analysis">
+          <div class="layer">
+            <h3>Restaurant Review Sentiment Analysis</h3>
+            <p>A machine learning model predicting positive/negative reviews with 90% accuracy.</p>
+            <a href="https://github.com/sanath2000"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> sc23z@fsu.edu</p>
+          <p><i class="fa-solid fa-phone"></i> +1 346-668-8209</p>
+          <p><i class="fa-solid fa-location-dot"></i>1505 W Tharpe Street Apt 3124<br>Tallahassee,Florida</p>
+          <div class="social-icons">
+            <a href="https://github.com/sanath2000"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/direct/inbox/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sanath-chigurumamidi-3a42a51a0/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="Images/Resume-FT.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Let's talk</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Particle JS -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="particles-config.js"></script>
+  <!-- Scripts for Tab Functionality and Menu -->
+  <script src="scripts.js"></script>
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+  
+    function opentab(tabname)
+    {
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+  </script>
+  <script>
+    var sidemenu=document.getElementById("sidemenu");
+  
+    function openmenu(){
+      sidemenu.style.right="0";
+      function closemenu(){
+        sidemenu.style.right="-200px";
+      }
+  
+    }
+  </script>
+  
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwXHDutm7RflfygEK9joYOPRqqZm76QN7xks0o2uImnDkRcS25vVaJejU9L3xxUGG3rdw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{ msg.innerHTML="Message sent Successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+  
+        },5000)
+        form.reset()
+      })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+</body>
+</html>
