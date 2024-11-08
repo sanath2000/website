@@ -20,6 +20,7 @@ body {
   color: #fff;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .container {
@@ -35,8 +36,12 @@ nav {
 
 .logo {
   width: 140px;
+  animation: rotate 10s infinite linear;
 }
-
+@keyframes rotate {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
 nav ul li {
   display: inline-block;
   list-style: none;
@@ -71,8 +76,8 @@ nav ul li a:hover::after {
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
-  flex-grow: 30px; /* Ensures the image appears on the right */
-  margin-top: 7.5%; /* Optional: adjust to your preference */
+  /*flex-grow: 30px; /* Ensures the image appears on the right */
+  /*margin-top: 7.5%; /* Optional: adjust to your preference */
 }
 
 .header-text {
@@ -135,18 +140,34 @@ nav ul li a:hover::after {
 .header-image {
   
   margin-left: 20px; 
-  max-height: 2550px;
+  
   object-fit: cover;/* Add space between text and image */
 }
 
 .header-image img {
-  width: 200px; /* Adjust width as needed */
-  max-height: 22950px; /* Ensures image stays aligned */
-  border-radius: 8px; /* Optional: adds rounded corners */
+  width: 350px; /* Adjust width as needed */
+  transition: transform 0.3s ease; /* Ensures image stays aligned */
+  border-radius: 10px; /* Optional: adds rounded corners */
 }
-
-
-
+.header-image img:hover {
+  transform: scale(1.1);
+}
+@keyframes fadeText {
+  0%, 20%, 100% {
+    opacity: 0;
+  }
+  50%, 80% {
+    opacity: 1;
+  }
+}
+.header-text h1 span {
+  animation: fadeText 3s ease infinite;
+  color: #e78ee1;
+}
+nav ul li a:hover {
+  color: #ff004f;
+  transition: color 0.3s ease;
+}
 
 
 @keyframes fadeIn {
@@ -187,10 +208,21 @@ nav ul li a:hover::after {
 .about-col-1 img {
   width: 100%;
   border-radius: 15px;
+  animation: zoomIn 2s ease forwards;
+
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .about-col-2 {
   flex-basis: 60%;
+  
 }
 
 .sub-title {
@@ -245,6 +277,29 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
   display: block;
 }
+button:hover {
+  color: #fff;
+  background: linear-gradient(90deg, rgba(255, 0, 150, 1) 0%, rgba(0, 229, 255, 1) 100%);
+  box-shadow: 0 0 10px rgba(255, 0, 150, 0.6), 0 0 20px rgba(0, 229, 255, 0.6);
+  transition: 0.3s ease;
+}
+.code-snippet {
+  font-family: 'Courier New', Courier, monospace;
+  color: #00e5ff;
+  opacity: 0.8;
+  animation: scroll 10s linear infinite;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  font-size: 14px;
+}
+
+@keyframes scroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+
 
 /* Services Section */
 #services {
